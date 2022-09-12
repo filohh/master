@@ -54,7 +54,7 @@ modalX.addEventListener('click', () => {
 });
 
 loginFormBtn.addEventListener('click', () => {
-  const loginUserInfo = documemt.querySelector('.login-user-info');
+  const loginUserInfo = document.querySelector('.login-user-info');
   const loginPassword = document.querySelector('.login-password');
 
   if(loginUserInfo.value !== '' && loginPassword.value !== '') {
@@ -101,8 +101,9 @@ modalInput.addEventListener('blur', e => {
 
 // Sidebar
 user.addEventListener('click', () => {
+  console.log('aplicou');
   sidebar.classList.add('sidebar-display');
-  sidebarWrapper.classList.add('.sidebar-wrapper-display');
+  sidebarWrapper.classList.add('sidebar-wrapper-display');
 });
 
 xBtn.addEventListener('click', () => {
